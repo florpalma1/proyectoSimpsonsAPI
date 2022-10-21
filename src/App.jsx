@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
-import "bootstrap/dist/css/bootstrap.min.css"
-import "./app.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./components/App.css";
 import Frase from "./components/Frase";
 import { Button } from "react-bootstrap";
 
