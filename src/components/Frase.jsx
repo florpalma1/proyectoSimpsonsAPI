@@ -3,7 +3,7 @@ import { Card, Container, Row, Col } from "react-bootstrap"
 const Frase = ({personaje}) => {
   return (
     <>
-      <Container>
+      <Container className="p-5">
         <Card>
           <Card.Body>
           <Row>
