@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./components/App.css";
 import Frase from "./components/Frase";
+import Spinner from "./components/Spinner";
 import { Button } from "react-bootstrap";
 
 function App() {
@@ -31,13 +32,13 @@ function App() {
                className="p-3" 
                alt="Los simpsons titulo" />
              </div>
-             <Button type="button" variant="warning" className="w-50 mb-5">
+             <Button type="button" variant="warning" className="w-50 mb-5" onClick={consultarAPI}>
             Obtener frase
           </Button>
         </div>
-      <div className="card-body">
+    
         <Frase personaje={personaje}></Frase>
-      </div>
+      <Spinner></Spinner>
     </container>
   );
 }
